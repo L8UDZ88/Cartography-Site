@@ -1,9 +1,12 @@
+make_stub () {
+FILE="$1"; NAME="$2"; TAG="$3"
+cat > "$FILE" <<HTML
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>OmniStory — Cartography</title>
+<title>${NAME} — Cartography</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -31,8 +34,8 @@
 <section class="page-hero">
   <div class="wrap">
     <a class="back-home" href="index.html">← Cartography Network</a>
-    <p class="tag eyebrow">Story (reality) — health</p>
-    <h1>OmniStory</h1>
+    <p class="tag eyebrow">${TAG}</p>
+    <h1>${NAME}</h1>
     <p class="promise">[Promise line — to come]</p>
     <p class="lede">[Page copy to come — verbatim from your docs]</p>
   </div>
@@ -50,3 +53,9 @@
 </footer>
 </body>
 </html>
+HTML
+}
+make_stub "legendary-lessons.html" "Legendary Lessons" '"feeder" sites focused on free content'
+make_stub "growfast.html" "GrowFast" "Sales (revenue) — wealth"
+make_stub "omnistory.html" "OmniStory" "Story (reality) — health"
+make_stub "attraction-factors.html" "Attraction Factors" "Seduction (relationships) — happiness"
