@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>OmniStory — Cartography</title>
+<meta name="description" content="Map the story before it maps you. Your struggle is your strength. The framework for authoring your own reality." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css" />
+<style>:root{ --accent-glow: rgba(224,138,90,0.30); }</style>
+</head>
+<body>
+<header class="nav">
+  <div class="wrap">
+    <a class="brandmark" href="index.html">
+      <svg class="compass" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <circle cx="50" cy="50" r="46" stroke="#c9a14a" stroke-width="3"/><circle cx="50" cy="50" r="4" fill="#c9a14a"/>
+        <polygon points="50,12 58,50 50,46 42,50" fill="#e08a5a"/><polygon points="50,88 42,50 50,54 58,50" fill="#9fb2c4"/>
+      </svg><span>Cartography</span>
+    </a>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="legendary-lessons.html">Legendary Lessons</a>
+      <a href="growfast.html">GrowFast</a>
+      <a href="attraction-factors.html">Attraction Factors</a>
+    </nav>
+  </div>
+</header>
+
+<section class="page-hero">
+  <div class="wrap">
+    <a class="back-home" href="index.html">← Cartography Network</a>
+    <p class="tag eyebrow">Reality · Health</p>
+    <h1>OmniStory</h1>
+    <p class="promise">Map the story before it maps you.</p>
+    <p class="lede">Remember the miracle: your struggle is your strength. OmniStory is the framework for authoring your own reality — and recognizing the one consciousness running through it all.</p>
+    <div class="btn-row"><a class="btn btn-primary" href="#join">Begin Your Story</a></div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap prose fade-up">
+    <p>If you are human, you have a story to map — your brand story, your favorite hero, or your own journey. Once you define the elements and stretch your story across the wheel, you can run long-term campaigns that move your life forward with clarity instead of doubt.</p>
+    <h2>The Frequency Map</h2>
+    <p>You vibrate at a particular frequency. True love sits at one end of the spectrum, absolute fear at the other, and every point between is a gradient — like keys on a piano, each carrying its own note in reality. You can only manifest a reality that reflects where your beliefs sit on the fear–love spectrum. The work is simple to name and a lifetime to master: <strong style="color:var(--parchment)">anything that increases fear lowers your frequency; increasing love raises it.</strong></p>
+    <h2>The cycles</h2>
+    <div class="feature-list">
+      <div class="feature"><h3>Struggle</h3><p>The obstacle is the way. Within every adversity lies the equal and opposite opportunity — once you learn to read it.</p></div>
+      <div class="feature"><h3>Strength</h3><p>Let yourself feel full emotional cycles. The win is acknowledgement without judgement — that is where strength is built.</p></div>
+      <div class="feature"><h3>Service</h3><p>True alignment: who you are in truth, and how you serve in truth. Strength becomes meaning when it is given.</p></div>
+      <div class="feature"><h3>Heroscope</h3><p>Locate yourself on the map of the heroic journey — and chart the next leg with intention.</p></div>
+    </div>
+    <h2>The agreement</h2>
+    <p>What if you agreed to your current reality? Everything in your life was agreed upon by you at some point — which means you can make new agreements. Good news: it's all your fault. There's no <em>them</em>, just you, the whole time. Change your thoughts, change your focus, and the world changes with you.</p>
+  </div>
+</section>
+
+<section class="band" id="join">
+  <div class="wrap capture">
+    <div class="section-head fade-up" style="margin-bottom:0">
+      <p class="eyebrow">Author your reality</p>
+      <h2 style="color:var(--parchment)">Start mapping your story.</h2>
+    </div>
+    <form class="fade-up" onsubmit="event.preventDefault(); this.querySelector('.note').textContent='Welcome. (Connect this form to your email tool to go live.)';">
+      <input type="email" placeholder="you@example.com" aria-label="Email" required />
+      <button class="btn btn-primary" type="submit">Get Early Access</button>
+      <p class="note" style="flex-basis:100%">No spam. Unsubscribe anytime.</p>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap foot-bottom" style="border:0; margin:0; padding:0">
+    <span>© 2026 Cartography Network.</span>
+    <span><a href="index.html" style="color:var(--brass)">← Back to Cartography</a></span>
+  </div>
+</footer>
+<script>
+  const io = new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('in')}),{threshold:0.15});
+  document.querySelectorAll('.fade-up').forEach(el=>io.observe(el));
+</script>
+</body>
+</html>

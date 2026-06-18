@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>GrowFast — Cartography</title>
+<meta name="description" content="The map, measure, manage system for predictable revenue. Selling and money skills decide the fate of you and your investors — GrowFast is the playbook." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css" />
+<style>:root{ --accent-glow: rgba(46,108,142,0.34); }</style>
+</head>
+<body>
+<header class="nav">
+  <div class="wrap">
+    <a class="brandmark" href="index.html">
+      <svg class="compass" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <circle cx="50" cy="50" r="46" stroke="#c9a14a" stroke-width="3"/><circle cx="50" cy="50" r="4" fill="#c9a14a"/>
+        <polygon points="50,12 58,50 50,46 42,50" fill="#e08a5a"/><polygon points="50,88 42,50 50,54 58,50" fill="#9fb2c4"/>
+      </svg><span>Cartography</span>
+    </a>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="legendary-lessons.html">Legendary Lessons</a>
+      <a href="omnistory.html">OmniStory</a>
+      <a href="attraction-factors.html">Attraction Factors</a>
+    </nav>
+  </div>
+</header>
+
+<section class="page-hero">
+  <div class="wrap">
+    <a class="back-home" href="index.html">← Cartography Network</a>
+    <p class="tag eyebrow">Revenue · Wealth</p>
+    <h1>GrowFast</h1>
+    <p class="promise">Map. Measure. Manage. The system for predictable revenue.</p>
+    <p class="lede">Product skills are easy to find, validate, and hire. There is no school for selling and money skills — yet they decide the fate of you and your investors. GrowFast is the playbook.</p>
+    <div class="btn-row"><a class="btn btn-primary" href="#join">Get the Playbook</a></div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap prose fade-up">
+    <p><strong style="color:var(--parchment)">Value drives revenue — if it is communicated, converted, and compounded.</strong> It does not matter how valuable your product is, or how much value your engineering team creates. Without the skill to communicate it, capture it, and compound it into predictable revenue over the long term, the value never reaches the bank.</p>
+    <p>And here is the trap most founders miss: the best go-to-market people will not work for you without a well-defined playbook. The moment they sense a lack of clarity, they run — because they know from experience they cannot deliver results inside a flawed setup. GrowFast gives you the playbook that makes top talent say yes.</p>
+    <h2>The system</h2>
+    <div class="feature-list">
+      <div class="feature"><h3>Map</h3><p>Chart your value, your customer, and your route to revenue before a single rep dials.</p></div>
+      <div class="feature"><h3>Measure</h3><p>Instrument the funnel. Know your numbers honestly so you can steer instead of guess.</p></div>
+      <div class="feature"><h3>Manage</h3><p>Run the playbook with structure and incentive that the best operators respect — and stay for.</p></div>
+      <div class="feature"><h3>Compound</h3><p>Turn one-off wins into a repeatable, predictable revenue engine that grows with time.</p></div>
+    </div>
+    <h2>The chain</h2>
+    <p style="font-family:var(--serif); font-style:italic; font-size:1.3rem; color:var(--brass-soft)">Human → Time → Skills → Value → Money.</p>
+    <p>Most people stall between Value and Money — they build something worthy and never learn to convert it. GrowFast is the bridge: the communication, capture, and compounding skills no university teaches but every great company runs on.</p>
+  </div>
+</section>
+
+<section class="band" id="join">
+  <div class="wrap capture">
+    <div class="section-head fade-up" style="margin-bottom:0">
+      <p class="eyebrow">Mission Control for revenue</p>
+      <h2 style="color:var(--parchment)">Start building the engine.</h2>
+    </div>
+    <form class="fade-up" onsubmit="event.preventDefault(); this.querySelector('.note').textContent='You are in. (Connect this form to your email tool to go live.)';">
+      <input type="email" placeholder="you@example.com" aria-label="Email" required />
+      <button class="btn btn-primary" type="submit">Get Early Access</button>
+      <p class="note" style="flex-basis:100%">No spam. Unsubscribe anytime.</p>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap foot-bottom" style="border:0; margin:0; padding:0">
+    <span>© 2026 Cartography Network.</span>
+    <span><a href="index.html" style="color:var(--brass)">← Back to Cartography</a></span>
+  </div>
+</footer>
+<script>
+  const io = new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('in')}),{threshold:0.15});
+  document.querySelectorAll('.fade-up').forEach(el=>io.observe(el));
+</script>
+</body>
+</html>

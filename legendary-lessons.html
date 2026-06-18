@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Legendary Lessons — Cartography</title>
+<meta name="description" content="52 weeks of the world's greatest thinkers, decoded for modern times. The free feeder of the Cartography Network." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css" />
+<style>:root{ --accent-glow: rgba(201,161,74,0.26); }</style>
+</head>
+<body>
+<header class="nav">
+  <div class="wrap">
+    <a class="brandmark" href="index.html">
+      <svg class="compass" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <circle cx="50" cy="50" r="46" stroke="#c9a14a" stroke-width="3"/><circle cx="50" cy="50" r="4" fill="#c9a14a"/>
+        <polygon points="50,12 58,50 50,46 42,50" fill="#e08a5a"/><polygon points="50,88 42,50 50,54 58,50" fill="#9fb2c4"/>
+      </svg><span>Cartography</span>
+    </a>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="growfast.html">GrowFast</a>
+      <a href="omnistory.html">OmniStory</a>
+      <a href="attraction-factors.html">Attraction Factors</a>
+    </nav>
+  </div>
+</header>
+
+<section class="page-hero">
+  <div class="wrap">
+    <a class="back-home" href="index.html">← Cartography Network</a>
+    <p class="tag eyebrow">Free · The Feeder</p>
+    <h1>Legendary Lessons</h1>
+    <p class="promise">The timeless playbook, one legend at a time.</p>
+    <p class="lede">This is the collection built for the questions worth answering: which lessons actually transform how you think, earn, and live? Fifty-two weeks of the greatest minds — decoded and made usable for modern times.</p>
+    <div class="btn-row"><a class="btn btn-primary" href="#join">Get the Weekly Lesson</a></div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap prose fade-up">
+    <p>Approximately 26 books across a 52-week continuum — one legendary thinker every two weeks. Each one broken down by Sam &amp; Tyson, stretched across strategy, story, sales, success, and self, and turned into something you can actually apply this week.</p>
+    <h2>What you get</h2>
+    <div class="feature-list">
+      <div class="feature"><h3>Weekly Lessons</h3><p>One distilled lesson from a legendary book, delivered to your inbox — built to be read in minutes and used the same day.</p></div>
+      <div class="feature"><h3>Action Guides</h3><p>Workbooks that translate timeless ideas into a 2026 game plan across strategy, story, sales, success, and self.</p></div>
+      <div class="feature"><h3>Letter From Your Future Self</h3><p>The signature method — write back from the person you are becoming, and reverse-engineer the path to them.</p></div>
+      <div class="feature"><h3>The StoryCenter Conversations</h3><p>Weekly long-form breakdowns of well-known legendary lessons and how to apply them in modern times.</p></div>
+    </div>
+    <h2>Why it feeds everything</h2>
+    <p>Legendary Lessons is the free front door to the Cartography Network. The thinkers studied here are the same ones who inspired the deeper maps — OmniStory, GrowFast, and Attraction Factors. Start with the lessons. Follow the current to the map that matters most for you right now.</p>
+  </div>
+</section>
+
+<section class="band" id="join">
+  <div class="wrap capture">
+    <div class="section-head fade-up" style="margin-bottom:0">
+      <p class="eyebrow">Free forever</p>
+      <h2 style="color:var(--parchment)">One lesson. Every week.</h2>
+    </div>
+    <form class="fade-up" onsubmit="event.preventDefault(); this.querySelector('.note').textContent='You are on the list. (Connect this form to your email tool to go live.)';">
+      <input type="email" placeholder="you@example.com" aria-label="Email" required />
+      <button class="btn btn-primary" type="submit">Send Me Lessons</button>
+      <p class="note" style="flex-basis:100%">No spam. Unsubscribe anytime.</p>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap foot-bottom" style="border:0; margin:0; padding:0">
+    <span>© 2026 Cartography Network.</span>
+    <span><a href="index.html" style="color:var(--brass)">← Back to Cartography</a></span>
+  </div>
+</footer>
+<script>
+  const io = new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('in')}),{threshold:0.15});
+  document.querySelectorAll('.fade-up').forEach(el=>io.observe(el));
+</script>
+</body>
+</html>
